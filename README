@@ -1,0 +1,14 @@
+fMRI Encoding with Textual Representations
+This is a tutorial for the Neuroimaging Methods Workshop given by Shaonan Wang. Special thanks to Xiaohan Zhang for proving the raw code in which part of the code is from https://github.com/HuthLab/speechmodeltutorial. If you use the code, please cite:
+
+Zhang, Xiaohan, Shaonan Wang, and Chengqing Zong. How Does the Experimental Setting Affect the Conclusions of Neural Encoding Models?. In Proceedings of the Thirteenth Language Resources and Evaluation Conference, pp. 6397-6404. 2022.
+
+Zhang, Xiaohan, Shaonan Wang, Nan Lin, Jiajun Zhang, and Chengqing Zong. Probing Word Syntactic Representations in the Brain by a Feature Elimination Method. (2022).
+
+In this tutorial you will step through a voxel-wise modeling analysis, which uses textual representations to predict brain activations. The higher the predictation score, the more information of the textual representations (semantics&syntax) is encoded in the brain.
+
+Here we provide some fMRI sample dataset ("story_1.mat, story_2.mat, ..., story_10.mat") and aligned textual representations ("story_1_word2vec_convolved.mat") which can be downloaded from https://drive.google.com/drive/folders/1z52lkYqAXHLV4qenfFUE5yetlgsvdX_3?usp=share_link. For a larger verison of this dataset, please download from : https://openneuro.org/datasets/ds004078. If you use this dataset, please cite:
+
+Wang, Shaonan, Xiaohan Zhang, Jiajun Zhang, and Chengqing Zong. A synchronized multimodal neuroimaging dataset for studying brain language processing. Scientific Data 9, no. 1 (2022): 1-10.
+
+We also provide two scripts: "hrf.py" and "load_nii.py" which can transform the raw data from https://openneuro.org/datasets/ds004078 to the format used in the this tutorial.
